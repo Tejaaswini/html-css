@@ -1,7 +1,6 @@
 body {
 	margin: 0;
 	padding: 0;
-  background-image: url('./assets/background.jpg');
 }
 * {
 	font-family: 'Open Sans';
@@ -319,19 +318,6 @@ nav ul li ul li a {
   display: block;
 }
 
-.hero-content{
-  color: white;
-  padding: 5vh 10vw;
-}
-
-.hero-content h1{
-  font-size: 80px;
-}
-
-.hero-content h3{
-  font-size: 35px;
-}
-
 .contact-us-btn{
   background-color: rgb(84, 150, 255);
   color: white;
@@ -341,7 +327,7 @@ nav ul li ul li a {
   margin-top: 10px;
   margin-bottom: 10px;
   border: none;
-  width:20%;
+  width:30%;
 }
 
 .dropdown-container{
@@ -391,6 +377,27 @@ nav ul li ul li a {
 	right: 49px;
 }
 
-.header{
-  background-color: #4d2c2c !important;
+.hero img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(.5);
+}
+
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.hero-content h1{
+  font-size: 80px;
+}
+
+.hero-content h3{
+  font-size: 35px;
 }
