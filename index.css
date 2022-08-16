@@ -272,10 +272,10 @@ nav {
   display: flex;
 }
 
-.sol-content.cc {
+.solution-content.cc {
   display: none;
 }
-.sol-content {
+.solution-content {
   font-family: "Quicksand", sans-serif;
   color: white;
   position: absolute;
@@ -284,66 +284,80 @@ nav {
   box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
   z-index: 1;
 }
-.sol-content {
+.solution-content {
   display: flex;
 }
-.sol-content {
+.solution-content {
   display: flex;
   padding: 20px;
   line-height: 1.5;
 }
-.sol{
+.solution{
   min-width: 400px;
   background-color: #000000;
   margin: 10px;
 }
-.sol ul{
+.solution ul{
   padding-left: 20px;
 }
-.sol li{
+.solution li{
   list-style: none;
 }
-.sol span{
+.solution span{
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
 }
-.dropdown:hover .sol-content.cc {
+.dropdown:hover .solution-content.cc {
   display: flex;
 }
 
-.hero img {
-  width: 100vw;
-  height: 84vh;
-  object-fit: cover;
-  filter: brightness(.5);
+.hero {
+  background-image: url("./assets/bg.png");
+  background-repeat: no-repeat;
+  height: 83vh;
+  width: 100%;
+  background-size: cover;
+  overflow: hidden;
 }
-
-
+.overlay {
+  background-color: black;
+  opacity: 0.6;
+  height: 83vh;
+  width: 50%;
+  float: left;
+}
 .hero-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.hero-text {
   position: absolute;
-  top: 50%;
-  left: 30%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  font-family: 'Roboto', sans-serif;
-}
-
-.hero-content h1{
-  font-size: 80px;
-}
-
-.hero-content h3{
-  font-size: 35px;
-}
-
-.contact-us-btn{
-  background-color: rgb(84, 150, 255);
+  transform: translate(50%, 0%);
   color: white;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  overflow: hidden;
+  margin-left: -20%;
+}
+.hero-text h2 {
+  font-size: 60px;
+  width: 70%;
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  color: white;
+}
+.contact-us-btn{
+  background-color: #2e86c1;
+  color: white;
+  padding: 3%;
+  cursor: pointer;
   border: none;
-  width:30%;
-  padding: 3% !important;
-  font-size: 20px;
-  border-radius: 10px;
+  outline: none;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 15px;
+}
+.hero-text h5 {
+  width: 60%;
+  font-size: 25px;
+  color: white;
 }
