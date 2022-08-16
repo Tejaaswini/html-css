@@ -9,140 +9,173 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./index.css" type="text/css">
+    <link rel="stylesheet" href="./index.css" myarrow="text/css">
     <title>Practice</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <!-- primary navbar -->
-    <div class="header">
-        <div class="primary-navbar">
-            <div class="navbar-right">
-                <a href=""><img src="./assets/logo.png"></a>
-                <div class="dropdown">
-                    <button class="dropbtn">Bussiness
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <button class="dropbtn">Solutions
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                    </div>
-                </div>
+    <!-- primary header -->
+    <nav>
+        <div class="primary-header">
+            <div class="logo">
+                <img src="./assets/logo.png" alt="logo" />
             </div>
-            <div class="navbar-left">
-                <a href="#home">ArrowSphere</a>
-                <a href="#home">My Arrow</a>
-                <div class="dropdown">
-                    <button class="dropbtn">Services & Platforms
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                    </div>
+            <div class="dropdown">
+                <div class="myarrow">
+                    <a href="#">Businesses</a>
+                    <i class="fa-solid fa-angle-down arrow r-arrow"></i>
                 </div>
-                <div class="search-container">
-                    <form action="/search" method="get">
-                        <input class="search expandright" id="searchright" type="search" name="q" placeholder="Search">
-                        <label class="button searchbutton" for="searchright"><span class="mglass">&#9906;</span></label>
-                    </form>
+                <div id="app"></div>
+            </div>
+            <div class="dropdown">
+                <div class="myarrow">
+                    <a href="#">About</a>
+                    <i class="fa-solid fa-angle-down arrow r-arrow"></i>
                 </div>
+                <div id="arrow-down"></div>
             </div>
         </div>
-    </div>
+        <div class="primary-header-right">
+            <div class="arrowsphere" id="arrowsphere-dropdown">
+                <div class="navbar">
+                    <div class="dropdown">
+                        <div class="myarrow">
+                            <a href="#">ArrowSphere</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <div class="myarrow">
+                            <a href="#"> MyArrow </a>
+                            <i class="fa-solid fa-angle-down arrow r-arrow"></i>
+                        </div>
+                        <div id="dropdown-json"></div>
+                    </div>
 
-    <!-- secondary navbar -->
-    <div class="secondary-navbar">
-        <a href="#home">Enterprise Computing Solutions</a>
-        <div class="dropdown">
-            <button class="dropbtn">Services & Platforms
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <!-- <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-            </div> -->
-            <div class="dropdown-content">
-                <div class="dropdown-container">
-                    <div>
-                        <h3>Services</h3>
-                        <div class="links-container">
-                            <a href="#">Marketing</a>
-                            <a href="#">Marketing</a>
-                            <a href="#">Marketing</a>
-                            <a href="#">Marketing</a>
-                            <a href="#">Marketing</a>
+                    <div class="dropdown">
+                        <div class="region">
+                            <div class="myarrow">
+                                <a href="#"> Region </a>
+                                <i class="fa-solid fa-angle-down arrow r-arrow"></i>
+                            </div>
+                            <div id="arrow-dropdown"></div>
                         </div>
                     </div>
-                    <div>
-                        <h3>Platforms</h3>
-                        <div class="links-container">
-                            <a href="#">
-                                <p>Marketing</p>
-                                <p>B2B Integration</p>
-                            </a>
-                            <a href="#">
-                                <p>Marketing</p>
-                                <p>B2B Integration</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <h3>Resources</h3>
+                </div>
+            </div>
+            <div class="search" id="search-bar">
+                <input myarrow="search" class="search-txt" placeholder="Search..." />
+                <button class="search-btn" id="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
 
-                        <div class="links-container">
-                            <a href="#">
-                                <p>Marketing</p>
-                                <p>B2B Integration</p>
-                            </a>
-                            <a href="#">
-                                <p>Marketing</p>
-                                <p>B2B Integration</p>
-                            </a>
-                        </div>
+    <!-- secondary header -->
+    <div class="secondary-header">
+        <div class="enterprise">
+            <a href="#">Enterprise Computing Solutions</a>
+        </div>
+        <div class="dropdown">
+            <div class="secondary-header-dropdown">
+                <a href="#">Services & Platforms</a><i class="fa-solid fa-angle-down arrow r-arrow"></i>
+            </div>
+            <div class="service-content service-header">
+                <div class="service-menu service-ff">
+                    <h3>Service</h3>
+                    <div class="platform-content c1">
+                        <ul>
+                            <li><a href="#">Marketing</a></li>
+                            <li><a href="#">Financing and leasing</a></li>
+                            <li><a href="#">Technical Sales engagement</a></li>
+                            <li><a href="#">IT lifecycle services</a></li>
+                            <li><a href="#">Education and training</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="platforms service-ff">
+                    <h3>Platforms</h3>
+                    <div class="platform-content col-two">
+                        <ul>
+                            <span>ArrowSphere</span>
+                            <li><a href="#">Cloud delivery and management </a></li>
+                            <span>MyArrow</span>
+                            <li><a href="#">Self-service transaction data</a></li>
+                            <span>ArrowLink</span>
+                            <li><a href="#">B2B integration</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="resources service-ff">
+                    <h3>Resources</h3>
+                    <div class="platform-content col-three">
+                        <ul>
+                            <span>Event</span>
+                            <li><a href="#">Training and webiners</a></li>
+                            <span>Case Studies</span>
+                            <li><a href="#">Industry success stories</a></li>
+                            <span>Solutions portal</span>
+                            <li><a href="#">Plug and play solutions</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
         <div class="dropdown">
-            <button class="dropbtn">Solutions
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+            <div class="secondary-header-dropdown">
+                <a href="#">Solutions</a><i class="fa-solid fa-angle-down arrow r-arrow"></i>
+            </div>
+            <div class="sol-content cc">
+                <div class="sol">
+                    <ul>
+                        <span>ArrowSphere</span>
+                        <li><a href="#">xyz</a></li>
+                        <span>MyArrow</span>
+                        <li><a href="#">xyz</a></li>
+                        <span>ArrowLink</span>
+                        <li><a href="#">xyz</a></li>
+                    </ul>
+                </div>
+                <div class="sol">
+                    <ul>
+                        <span>ArrowSphere</span>
+                        <li><a href="#">xyz</a></li>
+                        <span>MyArrow</span>
+                        <li><a href="#">xyz</a></li>
+                        <span>ArrowLink</span>
+                        <li><a href="#">xyz</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="dropdown">
-            <button class="dropbtn">Products
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+            <div class="secondary-header-dropdown">
+                <a href="#">Products</a><i class="fa-solid fa-angle-down arrow r-arrow"></i>
+            </div>
+            <div class="sol-content cc">
+                <div class="sol">
+                    <ul>
+                        <span>ArrowSphere</span>
+                        <li><a href="#">xyz</a></li>
+                        <span>MyArrow</span>
+                        <li><a href="#">xyz</a></li>
+                        <span>ArrowLink</span>
+                        <li><a href="#">xyz</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <a href="#home">Become a Partner</a>
+        <div class="secondary-header-dropdown">
+            <a href="#">Become a partners</a>
+        </div>
     </div>
 
     <!-- hero content -->
     <div class="hero">
-        <img src="./assets/background.jpg">
+        <img src="./assets/bg.png">
         <div class="hero-content">
             <h1>Where will you </br>be in five years?</h1>
             <h3>Ideas.Expertise.reach.Everything </br>your business needs to grow</h3>
