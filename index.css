@@ -9,7 +9,7 @@ nav {
   padding-right: 30px;
   position: relative;
   background-color: black;
-  height: 65px;
+  height: 60px;
 }
 .primary-header-right {
   display: flex;
@@ -24,7 +24,7 @@ nav {
   align-items: center;
 }
 .primary-header a {
-  font-size: 18px;
+  font-size: 14px;
   color: white;
   text-align: center;
   padding: 14px 16px;
@@ -38,13 +38,14 @@ nav {
   color: white;
   transition: all 0.3s ease;
 }
+
 .myarrow:hover .r-arrow {
   transform: rotate(180deg);
 }
 .secondary-header-dropdown:hover .r-arrow {
   transform: rotate(180deg);
 }
-/* search bar */
+
 .search {
   justify-content: flex-end;
   height: 35px;
@@ -74,7 +75,6 @@ nav {
   color: white;
 }
 
-/* js */
 .hide {
   display: none;
 }
@@ -90,6 +90,7 @@ nav {
 .active .search-txt {
   width: 350px;
   padding: 0 20px;
+  color: white;
 }
 
 .logo img {
@@ -112,13 +113,14 @@ nav {
   padding-left: 30px;
   padding-right: 30px;
   height: 60px;
+  border-bottom: 1px solid #292929;
 }
 .secondary-header a {
   text-decoration: none;
   color: white;
   text-align: center;
   padding: 14px 16px;
-  font-size: 18px;
+  font-size: 14px;
 }
 .enterprise a {
   font-size: 22px;
@@ -138,7 +140,7 @@ nav {
   text-decoration: none;
   display: block;
   text-align: left;
-  font-size: 16px;
+  font-size: 14px;
   font-family: "Quicksand", sans-serif;
 }
 .dropdown {
@@ -152,11 +154,20 @@ nav {
   min-width: 260px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  margin-top: -8px !important;
 }
 .dropdown:hover .myarrow,
 .dropdown:hover .drop-content {
-  background-color: #43434343;
+  background-color: #80808043;
   display: block;
+}
+
+.dropdown:hover .myarrow{
+  border: 2px solid white;
+}
+
+.myarrow a{
+  font-size: 12px !important;
 }
 
 .drop-content a:hover {
@@ -179,6 +190,8 @@ nav {
   min-width: 350px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  margin-right: -34% !important;
+  margin-top: -8px !important;
 }
 .line {
   margin-left: 20px;
@@ -197,7 +210,7 @@ nav {
 .content li {
   list-style: none;
   text-align: center;
-  padding: 15px 0px 15px 0;
+  padding: 10px 0px 10px 0;
 }
 .content li:hover {
   background-color: #2e86c1;
@@ -214,10 +227,11 @@ nav {
   display: block;
 }
 
-/* services and platforms */
 .secondary-header-dropdown:hover {
   background-color: #424242;
   display: block;
+  border-bottom: 5px solid rgb(0, 74, 106);
+  border-top: 7px solid #424242;
 }
 
 .dropdown .secondary-header-dropdown {
@@ -227,14 +241,14 @@ nav {
   display: none;
 }
 .service-content {
-  font-family: "Quicksand", sans-serif;
   color: white;
   position: absolute;
   left: -138%;
   background-color: #323232;
   box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
   z-index: 1;
-  width: 614%;
+  width: 500%;
+  margin-top: -8px;
 }
 .service-content {
   display: flex;
@@ -249,6 +263,7 @@ nav {
 }
 .service-content li {
   list-style: none;
+  font-size: 12px;
 }
 .platform-content {
   background-color: #000000;
@@ -261,11 +276,13 @@ nav {
 }
 .platform-content li {
   padding-bottom: 20px;
+  font-size: 12px !important;
 }
 .platform-content ul {
   padding: 0;
   padding-left: 20px;
   padding-top: 20px;
+  font-size: 12px !important;
 }
 
 .dropdown:hover .service-content.service-header {
@@ -286,6 +303,7 @@ nav {
 }
 .solution-content {
   display: flex;
+  margin-top: -8px !important;
 }
 .solution-content {
   display: flex;
@@ -293,7 +311,7 @@ nav {
   line-height: 1.5;
 }
 .solution{
-  min-width: 400px;
+  min-width: 300px;
   background-color: #000000;
   margin: 10px;
 }
@@ -339,7 +357,7 @@ nav {
   margin-left: -20%;
 }
 .hero-text h2 {
-  font-size: 60px;
+  font-size: 50px;
   width: 70%;
   font-family: "Quicksand", sans-serif;
   margin: 0;
@@ -348,13 +366,14 @@ nav {
 .contact-us-btn{
   background-color: #2e86c1;
   color: white;
-  padding: 3%;
+  padding: 15px;
   cursor: pointer;
   border: none;
   outline: none;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
-  border-radius: 15px;
+  border-radius: 20px;
+  width: 25%;
 }
 .hero-text h5 {
   width: 60%;

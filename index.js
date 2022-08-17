@@ -23,7 +23,6 @@ var menu = document.getElementById("arrowsphere-dropdown");
 var icon = document.getElementsByClassName("search-btn")[0];
 icon.onclick = function () {
   searchbar.classList.toggle("active");
-  // menu.style.display = "none";
   menu.classList.toggle("hide");
 };
 
